@@ -47,6 +47,10 @@
       align-items: center;
       font-size: 30px; /* Tamanho do ícone */
       padding: 10px;
+      cursor: pointer;
+  }
+  .social button:hover{
+    color: #6b4eff;
   }
   
   .cv {
@@ -57,8 +61,12 @@
       background-color: rgb(165, 231, 35);
       color: #6b4eff;
       font-weight: 700;
+      cursor: pointer;
       
   
+  }
+  .cv:hover {
+    filter: invert(1)
   }
   .container_body {
       display: flex;

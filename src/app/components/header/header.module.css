@@ -8,6 +8,7 @@
 .header img {
     width: 120px;
     height: 120px;
+    transition: filter 0.3s ease;
 }
 .header {
     display:  flex;
@@ -24,4 +25,11 @@
     height: 1px;
     background-color: #1a1a1a;
     padding: 1px 0;
+}
+
+
+
+.header a:hover {
+    color: #6b4eff;
+    cursor: pointer;
 }
