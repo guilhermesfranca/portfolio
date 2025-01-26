@@ -1,6 +1,6 @@
 # Portfolio - Guiherme França
 
-![Logo](./public/logo.png)
+![Logo](./public/Logo.png)
 ## English
 
 Welcome to my portfolio! This is an ongoing project, built with **React**. It showcases my skills, projects, and experience as a **Front-end Developer**. I am continuously working on improving the website to reflect my growth and the latest technologies I am learning.
