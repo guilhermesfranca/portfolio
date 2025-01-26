@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Guiherme França
 
-## Getting Started
+![Logo](./public/Logo.png)
+## English
 
-First, run the development server:
+Welcome to my portfolio! This is an ongoing project, built with **React**. It showcases my skills, projects, and experience as a **Front-end Developer**. I am continuously working on improving the website to reflect my growth and the latest technologies I am learning.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Features
+- Responsive design to ensure optimal viewing on all devices.
+- Showcase of my previous projects and accomplishments.
+- Links to my professional social media (LinkedIn, GitHub, etc.).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Technologies Used
+- **React**
+- **HTML** & **CSS**
+- **JavaScript**
+- **React Icons** for social media links
+- **Next.js** (if applicable)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To run this project locally, follow these steps:
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/guilhermesfranca/portfolio.git
+Install the dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copy
+Edit
+npm install
+Run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+bash
+Copy
+Edit
+npm start
+Open your browser and go to http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributing
+Feel free to fork this repository and submit a pull request with any improvements or suggestions you have.
 
-## Deploy on Vercel
+Português
+Bem-vindo ao meu portfólio! Este é um projeto em andamento, desenvolvido com React. Ele exibe minhas habilidades, projetos e experiência como Desenvolvedor Front-end. Estou sempre trabalhando para melhorar o site e refletir o meu crescimento e as últimas tecnologias que estou aprendendo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Funcionalidades
+Design responsivo para garantir uma boa visualização em todos os dispositivos.
+Exibição de meus projetos e conquistas anteriores.
+Links para minhas redes sociais profissionais (LinkedIn, GitHub, etc.).
+Tecnologias Utilizadas
+React
+HTML & CSS
+JavaScript
+React Icons para links de redes sociais
+Next.js (se aplicável)
+Instruções de Configuração
+Para rodar este projeto localmente, siga os passos abaixo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Clone o repositório:
+
+bash
+Copy
+Edit
+git clone https://github.com/guilhermesfranca/portfolio.git
+Instale as dependências:
+
+bash
+Copy
+Edit
+npm install
+Rode o servidor de desenvolvimento:
+
+bash
+Copy
+Edit
+npm start
+Abra seu navegador e acesse http://localhost:3000.
+
+Contribuindo
+Sinta-se à vontade para fazer um fork deste repositório e enviar um pull request com melhorias ou sugestões.
