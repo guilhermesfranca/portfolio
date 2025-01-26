@@ -1,6 +1,6 @@
 # Portfolio - Guiherme França
 
-![Logo](/public/logo.png)
+![Logo](./public/logo.png)
 
 ## English
 
