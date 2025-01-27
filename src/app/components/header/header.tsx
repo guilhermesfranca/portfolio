@@ -8,11 +8,12 @@ export default function Header() {
       <header className={styles.header}>
         <Image src={logo} alt="logo" />
         <div className={styles.about}>
-          <a>Home</a>
-          <a>Sobre</a>
-          <a>Habilidades</a>
-          <a>Projetos</a>
-          <a>Contato</a>
+        <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#idiomas">Idiomas</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
         </div>
       </header>
       <div className={styles.divisoria}></div>

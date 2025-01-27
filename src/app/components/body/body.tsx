@@ -6,7 +6,7 @@ import Body_text from "../body_text/body_text";
 
 export default function Body() {
   return (
-    <main className={styles.main}>
+    <main id="home" className={styles.main}>
       <Body_text />
       <Image className={styles.home_img} src={home} alt={'home'}/>
       

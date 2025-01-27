@@ -56,7 +56,14 @@ export default function Body_text() {
           <FaWhatsapp />
         </button>
       </div>
-      <button className={styles.cv}>Download CV</button>
+      <button className={styles.cv}>
+        <a
+          href="/CV%20Guilherme%20França%20-%20FE.pdf"
+          download="CV Guilherme França - FE.pdf"
+        >
+          Download CV
+        </a>
+      </button>
     </main>
   );
 }

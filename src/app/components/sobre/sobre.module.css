@@ -29,6 +29,7 @@
 .section .avatar {
     width: 30vw;
     height: auto;
+    border-radius: 40%;
 }
 .textos span {
     color: #a5e723;

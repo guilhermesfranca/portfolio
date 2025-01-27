@@ -6,4 +6,26 @@
     box-sizing: border-box;
     font-family: "Outfit", serif;
 
+
 }
+body {
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #6b4ffc;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Sobre() {
   return (
-    <section className={styles.section}>
+    <section id="sobre" className={styles.section}>
         <Image className={styles.avatar} src={avatar} alt={'avatar'}/>
       <div className={styles.textos}>
         <h1>Sobre Mim</h1>
