@@ -1,3 +1,5 @@
+/* skills.module.css */
+
 .section {
   display: flex;
   flex-direction: column;
@@ -12,12 +14,15 @@
   font-size: 50px;
   color: #a7e721;
 }
+.divisoria {
+  width: 50vw;
+  height: 2px;
+  background-color: #1a1a1a;
+}
+
 .box {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Define 3 colunas de tamanhos iguais */
+  grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanhos iguais */
   gap: 80px; /* Espaçamento entre os itens */
   width: 100vw; /* Adapta à largura da seção */
   justify-items: center; /* Centraliza cada item na grade */
@@ -47,32 +52,72 @@
   transition: all 0.5s ease;
 }
 
+/* Estilo das bandeiras */
 .flags {
-  filter: grayscale(100%); /* Deixa a imagem preto e branco */
+  filter: grayscale(100%); /* Deixa a imagem preto e branco por padrão em desktops */
   transition: filter 0.3s ease;
   border-radius: 10%;
   object-fit: contain;
 }
 
 .flags:hover {
-  filter: grayscale(0%); /* Deixa a imagem preto e branco */
-  transition: filter 0.5s ease;
+  filter: grayscale(0%); /* Remove o efeito de escala de cinza ao passar o mouse em desktops */
 }
+
 .flags_box {
   padding: 0 80px;
   width: 100vw;
   display: flex;
   justify-content: space-around;
 }
+
 .flags_box div {
   text-align: center;
   max-width: 250px;
-  
 }
+
 .flags_box p {
   color: #6b4eff;
   margin: 5px;
 }
+
 .flags_box span {
   color: #a7e721;
 }
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: repeat(2, 1fr); /* Muda para duas colunas em telas menores */
+        gap: 30px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .section h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    .box div svg {
+        font-size: 60px; /* Reduz o tamanho dos ícones em telas menores */
+    }
+
+    .flags_box {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    .flags_box div {
+        margin-bottom: 20px; /* Adiciona margem inferior entre os itens de idiomas */
+    }
+
+    .flags_box img {
+      width:70%;
+      border-radius:100%; 
+    }
+    
+    .flags {
+      filter: grayscale(0%); /* Deixa as bandeiras coloridas por padrão em dispositivos móveis */
+      border-radius:30%;
+      object-fit: contain; 
+    }
+}
+  

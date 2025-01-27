@@ -29,3 +29,6 @@ body {
   ::-webkit-scrollbar-track {
     background: #555;
   }
+  html {
+    scroll-behavior: smooth;
+  }

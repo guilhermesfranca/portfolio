@@ -1,7 +1,10 @@
+/* sobre.module.css */
+
 .section {
     background-color: black;
     color: white;
     display: flex;
+    padding: 40px; /* Adicionando padding para melhor espaçamento */
 }
 
 .textos {
@@ -9,8 +12,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-
 }
+
 .textos h1 {
     color: #a5e723;
     font-size: 55px;
@@ -22,15 +25,53 @@
 .textos h2 {
     font-size: 30px;
 }
+
 .textos p {
     font-size: 20px;
-
 }
+
 .section .avatar {
-    width: 30vw;
-    height: auto;
+    width: 30vw; /* Ajuste a largura da imagem do avatar */
+    height: auto; /* Mantém a proporção da imagem */
     border-radius: 40%;
 }
+
+/* Estilo para spans */
 .textos span {
     color: #a5e723;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; /* Muda a direção para coluna em dispositivos móveis */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+        padding: 20px; /* Reduz o padding em dispositivos móveis */
+    }
+
+    .textos {
+        width: 100%; /* Faz com que os textos ocupem toda a largura disponível */
+        gap: 20px; /* Reduz o espaço entre os elementos de texto */
+        padding: 20px;
+    }
+
+    .textos h1 {
+        font-size: 40px; /* Reduz o tamanho da fonte do título principal */
+        text-align: center;
+    }
+
+    .textos h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    .textos p {
+        font-size: 16px; /* Reduz o tamanho da fonte dos parágrafos */
+    }
+
+    .section .avatar {
+        width: 80%; /* Aumenta a largura da imagem do avatar em dispositivos móveis */
+        max-width: 300px; /* Limita a largura máxima da imagem do avatar */
+        margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
+    }
 }

@@ -1,91 +1,123 @@
+/* body_text.module.css */
+
 .div_apresentacao {
-    background-color: black;
-    color: white;
-    padding: 120px 60px;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  background-color: black;
+  color: white;
+  padding: 120px 60px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text_apresentacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_apresentacao h3 {
+  text-align: left;
+  font-size: 35px;
+}
+
+.text_apresentacao strong {
+  color: #a5e723;
+  font-size: 70px;
+  font-weight: bolder;
+  margin-top: -8px;
+  margin-left: -2px;
+}
+
+.text_apresentacao p {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.text_apresentacao span,
+.div_apresentacao span {
+  color: #a5e723;
+}
+
+.social {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões sociais */
+}
+
+.social button {
+  background-color: transparent;
+  color: #a5e723;
+  border: solid 2px;
+  border-radius: 0 15px 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; /* Tamanho do ícone */
+  padding: 10px;
+  cursor: pointer;
+}
+
+.social button:hover {
+  color: #6b4eff; /* Cor ao passar o mouse */
+}
+
+.cv {
+  width: 200px;
+  height: 50px;
+  border-radius: 0 15px 0 8px;
+  font-size: 20px;
+  background-color: rgb(165, 231, 35);
+  font-weight: 700; /* Negrito */
+}
+
+.cv a {
+  text-decoration: none; /* Sem sublinhado */
+  color: black; /* Cor do texto do link */
+}
+
+.cv:hover,
+.cv a:hover {
+  background-color: #6b4eff; /* Cor ao passar o mouse */
+  color: #a5e723; /* Cor do texto ao passar o mouse */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .div_apresentacao {
+      padding: 60px 30px; /* Reduzir padding em dispositivos móveis */
+      height: auto; /* Permitir que a altura se ajuste automaticamente */
+      align-items: center; /* Centralizar conteúdo verticalmente */
+      text-align: center; /* Centralizar texto */
+      justify-content: center; /* Ajustar justificação */
   }
-  .text_apresentacao {
-    display: flex;
-    flex-direction: column;
-  }
-  .text_apresentacao h3 {
-    text-align: left;
-    font-size: 35px;
-  }
-  .text_apresentacao strong {
-    color: #a5e723;
-    font-size: 70px;
-    font-weight: bolder;
-    margin-top: -8px;
-    margin-left: -2px;
-  }
+
+  .text_apresentacao h3,
+  .text_apresentacao strong,
   .text_apresentacao p {
-    font-size: 35px;
-    margin-bottom: 40px;
-    
+      font-size: 24px; /* Reduzir tamanho da fonte para dispositivos móveis */
+      margin-bottom: 20px; /* Reduzir margem inferior */
+      text-align: center; /* Centralizar texto em dispositivos móveis */
   }
-  .text_apresentacao span,
-  .div_apresentacao span {
-    color: #a5e723;
-  }
-  
+
   .social {
-      display: flex;
-      gap: 20px;
+      flex-direction: row; /* Colocar botões sociais em coluna */
+      gap: 10px; /* Reduzir espaço entre os botões sociais */
+      align-items: center; /* Centralizar os botões sociais */
+      margin-bottom: 20px; /* Margem inferior para espaçamento */
+      margin-top: 50px;
   }
-  
+
   .social button {
-      background-color: transparent;
-      color: #a5e723;
-      border: solid 2px;
-      border-radius: 0 15px 0 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px; /* Tamanho do ícone */
-      padding: 10px;
-      cursor: pointer;
-  }
-  .social button:hover{
-    color: #6b4eff;
-  }
-  
-  .cv {
-      width: 200px;
-      height: 50px;
-      border-radius: 0 15px 0 8px;
-      font-size: 20px;
-      background-color: rgb(165, 231, 35);
-      font-weight: 700;
+      font-size: 24px; /* Reduzir tamanho do ícone em dispositivos móveis */
+      padding: 8px; /* Ajustar padding dos botões sociais */
+      border-radius: 8px; /* Ajustar bordas dos botões sociais */
+      width: fit-content; /* Ajustar largura dos botões sociais ao conteúdo */
+ }
 
-  }
-  .cv a {
-    text-decoration: none;
-    color: black;
-
-  }
-  
-  .cv:hover, .cv a:hover {
-    background-color: #6b4eff;
-    color: #a5e723;
-  }
-  .container_body {
-      display: flex;
-      justify-content: space-between;
-  }
-  .div_main .home_img {
-      width: 180px;
-      height: 180px;
-      display: flex;
-      text-align: center;   
-      
-  }
-  
-  .div_main {
-      display: flex;
-      background-color: black;
-  
-  }
+ .cv {
+     width: auto; /* Permitir que o botão CV se ajuste ao conteúdo */
+     padding-left: 20px; 
+     padding-right: 20px; 
+     font-size: 18px; /* Reduzir tamanho da fonte para dispositivos móveis */
+     margin-top: 20px; /* Margem superior para espaçamento */
+ }
+}

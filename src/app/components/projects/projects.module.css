@@ -1,6 +1,32 @@
-.projects {
+/* projects.module.css */
+
+.title {
+    font-size: 36px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o título */
+    margin-top: 50px; /* Espaçamento inferior entre o título e a lista de projetos */
+    color: #a5e723;
+  }
+  
+  .projects {
     padding: 80px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
-    
-}
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .projects {
+      padding: 80px; /* Espaçamento ao redor da seção */
+      display: flex; /* Usar flexbox para empilhar os projetos */
+      flex-direction: column; /* Colocar os projetos em coluna */
+      align-items: center; /* Centraliza os projetos horizontalmente */
+      gap: 20px; /* Espaçamento entre os projetos */
+    }
+  
+    .projects_comp {
+      width: 100vh; /* Cada projeto ocupa toda a largura disponível */
+      max-width: 500px; /* Limita a largura máxima de cada projeto */
+      margin-bottom: 20px; /* Espaço inferior entre os projetos */
+    }
+  }
+  

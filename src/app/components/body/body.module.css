@@ -1,12 +1,33 @@
+/* body.module.css */
+
 .main {
     display: flex;
     background-color: black;
     align-items: center;
     justify-content: space-around;
 }
+
 .main .home_img {
     width: 600px;
     height: 600px;
     background-color: transparent;
-        
+}
+
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Mudar para coluna em dispositivos móveis */
+        align-items: center; /* Centralizar itens */
+        padding: 20px; /* Adicionar padding */
+    }
+
+    .main .home_img {
+        width: 20%; /* Ajustar a largura da imagem */
+        height: auto; /* Manter a proporção da imagem */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px; /* Limitar a largura máxima da imagem */
+    }
 }

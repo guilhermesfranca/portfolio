@@ -18,7 +18,7 @@ export default function Body_text() {
       </div>
       <p>
         Desenvolvendo soluções web que conectam ideias e pessoas com{" "}
-        <span>código</span> e <span>criatividade</span>
+        <span>Código</span> e <span>Criatividade</span>
       </p>
       <div className={styles.social}>
         <button

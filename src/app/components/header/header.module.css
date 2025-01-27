@@ -1,42 +1,62 @@
-.about {
-    font-weight:300;
-    color: white;
-    font-size: 17px;
-    display: flex;
-    gap: 40px;
-}
-.header img {
-    width: 120px;
-    height: 120px;
-    transition: filter 0.3s ease;
-}
+/* header.module.css */
+
 .header {
-    display:  flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 60px;
-    width: 100vw;
-    height: 60px;
-    background-color: black;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Ajuste o padding para dispositivos móveis */
+  width: 100vw;
+  background-color: black;
 }
+
+.about {
+  font-weight: 300;
+  color: white;
+  font-size: 17px;
+  display: flex;
+  gap: 20px; /* Reduza o gap em dispositivos móveis */
+}
+
+.header img {
+  width: 80px; /* Reduza o tamanho da imagem em dispositivos móveis */
+  height: auto; /* Mantenha a proporção da imagem */
+}
+
 .divisoria {
-    width: 100vw;
-    height: 1px;
-    background-color: #1a1a1a;
-    padding: 1px 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #1a1a1a;
 }
 
-
-
-.header a:hover {
-    color: #6b4eff;
-    cursor: pointer;
-}
+/* Estilos padrão para links */
 .header a {
-    text-decoration: none;
-    font-weight:300;
-    color: white;
-    font-size: 17px;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  font-size: 17px;
+}
 
+/* Efeito de hover */
+.header a:hover {
+  color: #6b4eff;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Altere a direção do flex para coluna */
+    align-items: flex-start; /* Alinhe os itens à esquerda */
+    padding: 20px; /* Ajuste o padding */
+  }
+
+  .about {
+    flex-wrap: wrap;
+    gap: 10px; /* Reduza o espaço entre os links */
+    width: 100%; /* Faça com que ocupe toda a largura */
+    align-items: center; /* Alinhe os links à esquerda */
+  }
+
+  .header img {
+    width: 60px; /* Reduza ainda mais a imagem em dispositivos móveis */
+  }
 }
